@@ -28,5 +28,5 @@ urlpatterns = [
     path('guest_manage/', views.guest_manage),
     path('sign_index/(?P<eid>[0-9]+)/', views.sign_index),
     path('sign_index_action/(?P<eid>[0-9]+)/', views.sign_index_action),
-    path('logout', views.logout),
+    path('logout/', views.logout),
 ]
