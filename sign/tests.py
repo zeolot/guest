@@ -50,7 +50,7 @@ class LoginActionTest(TestCase):
         """
         user = User.objects.get(username='admin')
         self.assertEqual(user.username, 'admin')
-        self.assertEqual(user.realname, 'admin@mail.com')
+        self.assertEqual(user.email, 'admin@mail.com')
 
     def test_login_action_username_password_null(self):
         """
@@ -108,7 +108,7 @@ class EventManageTest(TestCase):
         测试发布会搜索
         """
         response = self.client.post('/login_action/', data=self.login_user)
-        response = self.client.post('search_name', {'name': 'xiaomi5'})
+        response = self.client.post('/search_name/', {'name': 'xiaomi5'})
         self.assertEqual(response.status_code, 200)
         self.assertIn(b'xiaomi5', response.content)
         self.assertIn(b'beijing', response.content)
