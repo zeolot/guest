@@ -10,7 +10,7 @@ urlpatterns = [
     # ex: /api/get_event_list/
     path('get_event_list/', view_if.get_event_list, name='get_event_list'),
     # ex: /api/get_guest_list/
-    path('get_guest_list/', view_if.get_guest_list, name='get_guest_list'),
+    # path('get_guest_list/', view_if.get_guest_list, name='get_guest_list'),
     # ex: /api/user_sign/
     path('user_sign/', view_if.user_sign, name='user_sign'),
 ]
