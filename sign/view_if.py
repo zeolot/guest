@@ -44,8 +44,8 @@ def add_event(request):
 
 # 查询发布会接口
 def get_event_list(request):
-    eid = request.POST.get('eid', '')  # 发布会id
-    name = request.POST.get('name', '')  # 发布会标题
+    eid = request.GET.get('eid', '')  # 发布会id
+    name = request.GET.get('name', '')  # 发布会标题
 
     if not eid or name:
         return JsonResponse({'status': 10021,
