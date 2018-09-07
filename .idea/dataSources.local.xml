@@ -10,5 +10,8 @@
       <user-name>root</user-name>
       <introspection-schemas>*:guest</introspection-schemas>
     </data-source>
+    <data-source name="db" uuid="e676b2cc-249a-4977-8302-b27375fede78">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    </data-source>
   </component>
 </project>
